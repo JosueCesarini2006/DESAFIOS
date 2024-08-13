@@ -6,22 +6,19 @@ function clique1() {
 function clique2() {
    jogahtml.innerHTML += '<p> Você clicou escolheu a primeira opção = botão 2 </p>'
 }
-
-  function clique3() {
+function clique3() {
    jogahtml.innerHTML += '<p> Você clicou escolheu a primeira opção = botão 3 </p>'
 }
-
 function clique4() {
    jogahtml.innerHTML += '<p> Você clicou escolheu a primeira opção = botão 4 </p>'
 }
-
 
 
 function parimpar() {
 
 let num = Number(window.prompt('Digite um número: '))
 
-let tipo
+let tipo  
 
 if (num % 2 == 0) {
 
@@ -36,6 +33,6 @@ tipo = '<strong>ÍMPAR</strong>'
 
 let res = document.querySelector('section#result')
 
-res.innerHTML = '<p>0 número digitado foi ${num} e ele é: ${tipo}!</p>'
+res.innerHTML = `<p>0 número digitado foi ${num} e ele é: ${tipo}!</p>`
 
 }
