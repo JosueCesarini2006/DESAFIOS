@@ -11,5 +11,10 @@ function clique2() {
 function clique3() {
     Jogahtml.innerHTML += '<p> Você Clicou escolheu a primeira opção = botão 3</p>'
 }
+function clique4() {
+    Jogahtml.innerHTML += '<p> Você Clicou escolheu a primeira opção = botão 4</p>'
+}
+
+
 
 
