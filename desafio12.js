@@ -1,20 +1,19 @@
-var Jogahtml = window.document.getElementbyId('saida')
+var jogahtml = window.document.getElementbyId('saida')
 
 function clique1() {
-    Jogahtml.innerHTML += '<p> Você Clicou escolheu a primeira opção = botão 1 </p>'
+    jogahtml.innerHTML += '<p> Você Clicou escolheu a primeira opção = botão 1 </p>'
 }
 
 function clique2() {
-    Jogahtml.innerHTML += '<p> Você Clicou escolheu a primeira opção = botão 2 </p>'
+    jogahtml.innerHTML += '<p> Você Clicou escolheu a primeira opção = botão 2 </p>'
 }
 
 function clique3() {
-    Jogahtml.innerHTML += '<p> Você Clicou escolheu a primeira opção = botão 3</p>'
+    jogahtml.innerHTML += '<p> Você Clicou escolheu a primeira opção = botão 3</p>'
 }
+
 function clique4() {
-    Jogahtml.innerHTML += '<p> Você Clicou escolheu a primeira opção = botão 4</p>'
+    jogahtml.innerHTML += '<p> Você Clicou escolheu a primeira opção = botão 4</p>'
 }
-
-
 
 
