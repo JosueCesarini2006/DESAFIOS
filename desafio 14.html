@@ -18,11 +18,10 @@
             let nota2 = Number(window.prompt('Qual a segunda nota do aluno?'));
             let nota3 = Number(window.prompt('Qual a terceira nota do aluno?'));
    
-            // Calcula a média
+        
             let media = (nota1 + nota2 + nota3)/ 3;
             let situacao;
 
-            // Determina a situação do aluno
             if (media >= 60) {
                 situacao = 'Aprovado';
             } else if (media >= 30) {
@@ -31,9 +30,10 @@
                 situacao = 'Reprovado';
             }
 
-            // Exibe o resultado
             let res = document.getElementById('resultado');
-            res.innerHTML = `<p>Nome do aluno: ${nome}, </p> <p>Média: ${media.toFixed(2)}, <p>Situação: ${situacao}</p>`;
+            res.innerHTML = `<p>Nome do aluno: ${nome}
+            </p> <p>Média: ${media.toFixed(2)}
+            <p>Situação: ${situacao}</p>`;
         }
     </script>
 </body>
