@@ -13,27 +13,28 @@
     <script>
         function verificarSituacao() {
         
-            let nome = window.prompt('Qual o nome do aluno?');
+            let nome  = window.prompt('Qual o nome do aluno?');
             let nota1 = Number(window.prompt('Qual a primeira nota do aluno?'));
             let nota2 = Number(window.prompt('Qual a segunda nota do aluno?'));
             let nota3 = Number(window.prompt('Qual a terceira nota do aluno?'));
-   
+            let nota4 = Number(window.prompt('Qual a quarta nota do aluno?'));
         
-            let media = (nota1 + nota2 + nota3)/ 3;
-            let situacao;
+            let media = (nota1 + nota2 + nota3 + nota4 )/ 4;
 
             if (media >= 60) {
-                situacao = 'Aprovado';
+                situacao = 'O aluno foi Aprovado';
             } else if (media >= 30) {
-                situacao = 'Recuperação';
-            } else {
-                situacao = 'Reprovado';
+                situacao = 'O aluno está em Recuperação';
+            } else if(media <=29){
+                situacao = 'O aluno está Reprovado';
             }
 
+
+               
             let res = document.getElementById('resultado');
-            res.innerHTML = `<p>Nome do aluno: ${nome}
-            </p> <p>Média: ${media.toFixed(2)}
-            <p>Situação: ${situacao}</p>`;
+            res.innerHTML = `<p>Nome do aluno: ${nome}</p> 
+                    <p>Média: ${media.toFixed(2)}
+                     <p>Situação: ${situacao}</p>`;
         }
     </script>
 </body>
