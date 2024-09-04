@@ -3,15 +3,14 @@
     <title>Ler Produto e dar desconto</title>
 </head>
 <body>
-    <h1>Dndo desconto!</h1>
-    <button onclick="dessconto()">Iniciar a soma</button>
+    <h1>Dando desconto!</h1>
+    <button onclick="desconto()">Iniciar a soma</button>
 
-
-<section id="resultado">
+    <section id="resultado">
     <p>O resultado é :</p>
-</section>
+    </section>
  
-<script>
+    <script>
     function desconto(){
         let n1 = Number(window.prompt('Qual preço do produto:' ))
         let n2 = Number(window.prompt('Qual desconto do produto: '))
@@ -19,13 +18,10 @@
         let desc = n1-(n1*(n2/100))
 
         let res = document.getElementById('resultado')
-        res.innerHTML = `<p> O preço do produto cheio é R$ ${n1.toFixed(2)}, o desconto foi de ${n2.toFixed}
+        res.innerHTML = `<p> O preço do produto cheio é R$ ${n1.toFixed(2)}, o desconto foi de ${n2.toFixed(1)}%
             resultado no preço final de R$ ${desc.toFixed(2)} reais`
 
-
-
-
-    }
+  }
   </script>
 
 </body>
