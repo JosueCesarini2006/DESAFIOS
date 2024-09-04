@@ -9,7 +9,7 @@ function clique2() {
 function clique3() {
    jogahtml.innerHTML += '<p> Você clicou escolheu a primeira opção = botão 3 </p>'
 }
-function clique4() {
+function clique() {
    jogahtml.innerHTML += '<p> Você clicou escolheu a primeira opção = botão 4 </p>'
 }
 
