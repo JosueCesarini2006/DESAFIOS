@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, red, gray, blue);
+}
+
+.galeria {
+    display: flex;
+    gap: 20px;
+}
+
+.imagem {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagem.ativa {
+    transform: scale(1.5);
+}
