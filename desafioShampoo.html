@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Troca de Imagem</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(to right, green, orange);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="shampoo2.png" alt="Imagem inicial" id="minhaImagem">
+
+    <script>
+        const imagem = document.getElementById('minhaImagem');
+        const imagem2 = 'shampoo.png'; // Caminho para a segunda imagem
+
+        imagem.addEventListener('click', () => {
+            imagem.src = imagem2;
+        });
+    </script>
+</body>
+</html>
