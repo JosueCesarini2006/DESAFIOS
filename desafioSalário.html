@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Folha de Pagamento</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #800080, #ffffff);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin: 50px auto;
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .logo {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="logoreal-removebg-preview.png" alt="Sua Logo"> <h1>Cálculo de Folha de Pagamento</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome"><br>
+        <label for="salario">Salário Bruto:</label>
+        <input type="number" id="salario"><br>
+        <button onclick="calcular()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function calcular() {
+            const nome = document.getElementById('nome').value;
+            const salarioBruto = parseFloat(document.getElementById('salario').value);
+            const resultado = document.getElementById('resultado');
+
+            let imposto = 0;
+            if (salarioBruto > 5000) {
+                imposto = salarioBruto * 0.175;
+            } else if (salarioBruto > 4000) {
+                imposto = salarioBruto * 0.12;
+            } else if (salarioBruto > 3000) {
+                imposto = salarioBruto * 0.075;
+            } else if (salarioBruto > 1800) {
+                imposto = salarioBruto * 0.035;
+            }
+
+            const salarioLiquido = salarioBruto - imposto;
+
+            resultado.innerHTML = `Olá, ${nome}!<br>
+                                    Seu salário bruto é: R$ ${salarioBruto.toFixed(2)}<br>
+                                    O imposto de renda é: R$ ${imposto.toFixed(2)}<br>
+                                    Seu salário líquido é: R$ ${salarioLiquido.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
